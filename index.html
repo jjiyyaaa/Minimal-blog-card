@@ -4,14 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta name="description" content="Minimal blog card demonstrating simple design beauty">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="resources/favicon.ico" type="image/x-icon" />
 
     <title>Minimal Blog Card | devChallenges.io</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+          min-height: 100vh;
+          font-family: 'Sora', sans-serif;
+          background-color: #FAFAF9;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .card {
+          background-color: #FFFFFF;
+          width: 368px;
+          height: 387px;
+          border-radius: 16px;
+          box-shadow: 8px 8px 20px 0px #E5EAF0;
+          overflow: hidden;
+          margin-top: 240px;
+          margin-bottom: 164px;
+      }
+
+      .card-body {
+          padding: 16px;
+      }
+
+      .card-img img {
+          width: 100%;
+          height: auto;
+          border-radius: 12px;
+          display: block;
+      }
+
+      .tag {
+          display: inline-block;
+          background-color: #F2EAFD;
+          color: #7C19EE;
+          font-size: 10px;
+          font-weight: bold;
+          padding: 6px 16px;
+          border-radius: 999px;
+          margin-top: 16px;
+          margin-bottom: 16px;
+      }
+
+      .card-title {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 6px;
+          color: #20293A;
+      }
+
+      .card-text {
+          font-size: 14px;
+          color: rgb(55, 65, 81);
+          font-weight: 300;
+          line-height: 1.5;
+      }
+
+      .card-footer {
+          padding: 20px;
+          border-top: 1px solid #E5EAF0;
+      }
+
+      .author {
+          font-size: 12px;
+          text-align: center;
+          margin-top: 16px;
+          color: rgb(55, 65, 81);
+          font-weight: 300;
+      }
+      .author a {
+          text-decoration: none;
+      }
+
+      .attribution {
+          font-size: 14px;
+          text-align: center;
+          color: #6B7280;
+          margin-bottom: 60px;
+      }
+
+      .atribution a {
+          color: inherit;
+          font-weight: 600;
+      }
+    </style>
   </head>
   <body>
     
@@ -22,7 +117,15 @@
         <div class="card-body">
 
           <figure class="card-img">
-            <img src="resources/Cactus.jpg" alt="Cactus">
+            <img 
+              src="resources/Cactus.webp" 
+              alt="Potted cactus plant" 
+              width="336" 
+              height="152"
+              fetchpriority="high"
+              decoding="async"
+              style="max-width: 100%; height: auto;"
+            />
           </figure>
 
           <span class="tag">Design</span>
@@ -33,11 +136,11 @@
             From minimalist sculptures to minimalist paintings, this blog will inspire you to appreciate the beauty that lies in simplicity.
           </p>
 
-          </div>
+        </div>
 
-          <div class="card-footer">
-            <span class="author">Annie Spratt</span>
-          </div>
+        <div class="card-footer">
+          <span class="author">Annie Spratt</span>
+        </div>
           
       </article>
 
